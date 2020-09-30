@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Items/EmptyInventorySlot.png" type="Texture" id=1]
 [ext_resource path="res://InventorySlotDisplay.gd" type="Script" id=2]
+[ext_resource path="res://PixelRPG.tres" type="DynamicFont" id=3]
 
 [node name="InventorySlotDisplay" type="CenterContainer"]
 anchor_right = 1.0
@@ -21,3 +22,15 @@ margin_bottom = 99.0
 rect_min_size = Vector2( 18, 18 )
 texture = ExtResource( 1 )
 stretch_mode = 4
+
+[node name="ItemAmountLabel" type="Label" parent="ItemTextureRect"]
+margin_left = 10.1022
+margin_top = 13.8905
+margin_right = 23.1022
+margin_bottom = 19.8905
+custom_fonts/font = ExtResource( 3 )
+text = "100"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
